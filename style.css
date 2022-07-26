@@ -1,11 +1,43 @@
-
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(5,fr);
+body {
+    padding: 0px;
+    margin: 0%;
 }
 
-image {
+#container {
     display: grid;
-    grid-column: 1/2;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(12, 1fr);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.pic {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 12;
+    background: url('/city.jpg');
+    background-size: cover;
+}
+
+.para {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    background-color: rgb(250, 248, 248);
+    padding-top: 8rem;
+    
+}
+.form-container {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    padding-left: 2rem;
+
+}
+
+.form-main {
+    display: flex;
 }
