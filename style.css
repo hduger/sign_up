@@ -18,12 +18,25 @@ body {
 }
 
 .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: span 3;
     grid-row-start: 1;
     grid-row-end: span 12;
     background: url('/city.jpg');
     background-size: cover;
+}
+
+.img-cont {
+    display: flex;
+    height: 150px;
+    min-width: 150px;
+}
+
+.odin {
+    
 }
 
 .para {
@@ -68,6 +81,11 @@ input {
     margin-top: .25rem;
     background-color: hsl(210, 5%, 85%);
     border-color: rgb(82, 82, 133);
+}
+
+input:focus {
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px 3px rgb(171, 208, 240);
 }
 
 label {
